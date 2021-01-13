@@ -118,10 +118,6 @@ textarea {
 
   }
 
-  header figure {
-
-  }
-
   .header-divider {
     width: 100%;
     height: 1px;
@@ -159,6 +155,10 @@ textarea {
     margin: 50px 0;
   }
 
+  footer .contact {
+    margin-bottom: 50px;
+  }
+
   footer .social-icons {
     display: flex;
     justify-content: space-around;
@@ -173,7 +173,7 @@ textarea {
   }
 
   footer .copyright {
-    margin: 20px 0;
+    margin: 70px 0 0 0;
   }
 
   /***** Main area styles - mobile *****/
@@ -404,26 +404,36 @@ textarea {
   /*-------- TABLET styles here --------*/
 
   .content-wrapper {
-    max-width: 720px;
+    max-width: 640px;
     margin: 100px 0;
   }
 
-/*------------------- Header section ---------------------*/
+/*------------------- Header ---------------------*/
 
   header {
-    justify-content:;
+    justify-content: space-around;
+    padding: 33px 0;
 
   }
 
   header .content-wrapper {
-    justify-content: ;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
   }
 
   header nav ul {
-    width: 25%;
+    justify-content: space-between;
   }
 
-/*----------------------- Aside section - email form field ----------------------*/
+  .header-divider {
+    display: none;
+  }
+
+/*----------------------- Aside Section - Homepage----------------------*/
 
   aside .content-wrapper {
     display: flex;
@@ -445,24 +455,26 @@ textarea {
     width: 45%;
   }
 
-  /*----------------- Main section - features -------------------*/
+  /*----------------- Main Section - Homepage-------------------*/
+
+  .features .features-items {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 
   .features-items article {
     width: 50%;
-    margin:
   }
 
   .features-item-description {
-    padding: 0 15px;
+    padding-right: 35px;
   }
 
 
-/* ------------ Reviews section ----------------*/
+/* ------------ Reviews - Homepage ----------------*/
 
   .reviews {
-    display: flex;
     width: 100%;
-    background-color: pink;
   }
 
   .reviews .content-wrapper {
@@ -472,33 +484,77 @@ textarea {
     width: 100%;
   }
 
-  .reviews .content-wrapper h2 {
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
-
-  .reviews-image {
+  .reviews-half-width {
     display: flex;
-    flex-flow: row nowrap;
-    height: auto;
-    width: 45%;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .reviews-text {
     display: flex;
-    flex-flow: row wrap;
-    width: 45%;
+    flex-direction: column;
+    width: 50%;
   }
 
 /*------------- Footer -------------------------*/
 
-  footer .contact {
-    width: 25%;
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
   }
 
-  footer .social-icons {
-    width: 32%;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+    width: 40%;
+    text-align: center;
+  }
+
+  footer .social {
+    margin-bottom: 0;
+    width: 40%;
+    text-align: center;
+  }
+
+  footer .copyright {
+    width: 100%;
+    text-align: center;
+  }
+
+/*===============================================
+ABOUT PAGE - TABLET STYLES
+================================================*/
+
+  .mission .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .mission h2 {
+    width: 100%;
+  }
+
+  .mission-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;
   }
 
 }
@@ -512,23 +568,26 @@ textarea {
     width: 100%;
   }
 
+  .features .content-wrapper {
+    width: 90%;
+  }
+
   .features-items article {
     width: 32%;
   }
 
   /*---------- REVIEWS --------*/
 
-    .reviews {
+  .reviews {
     display: flex;
     width: 100%;
-    background-color: pink;
   }
 
   .reviews .content-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    width: 100%;
+    width: 90%;
   }
 
   .reviews .content-wrapper h2 {
@@ -548,6 +607,16 @@ textarea {
     display: flex;
     flex-flow: row wrap;
     width: 45%;
+  }
+
+/*--------------- FOOTER ------------------*/
+
+  .contact-section {
+    justify-content: center;
+  }
+
+  .contact-content {
+    max-width:;
   }
 
 }
