@@ -100,6 +100,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #60655F;
   }
 
   /***** Header styles - mobile *****/
@@ -143,6 +144,7 @@ textarea {
 
   footer {
     flex-direction: column;
+    background-color: #AB9675;
 
   }
 
@@ -193,6 +195,7 @@ textarea {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
+      background-color: #FFE0C9;
     }
 
     /***** Email form field styles - homepage *****/
@@ -202,6 +205,7 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #D4CCBA;
 
     }
 
@@ -211,6 +215,7 @@ textarea {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
+      background-color: #CF8442;
 
     }
 
@@ -255,12 +260,6 @@ textarea {
 
     }
 
-  /***** Footer styles *****/
-
-
-
-
-
 
   /*=====================================================
   ABOUT PAGE
@@ -281,7 +280,7 @@ textarea {
     flex-flow: row wrap;
 }
 
-  .contact-content p {
+  .contact-content  {
     margin: 0;
   }
 
@@ -557,14 +556,31 @@ ABOUT PAGE - TABLET STYLES
     width: 90%;
   }
 
+/*========================================================
+FAQ PAGE - TABLET
+=========================================================*/
+   .faq .content-wrapper {
+    justify-content: space-between;
+   }
+
+   .faq h2 {
+    width: 100%;
+   }
+
+   .faq-content {
+    width: 48%;
+   }
+
 }
 
 
 @media only screen and (min-width: 1200px) {
   /*-------- DESKTOP styles here --------*/
 
+  /* DESKTOP HOMEPAGE */
+
   .content-wrapper {
-    max-width: 1200px;
+    max-width: 1100px;
     width: 100%;
   }
 
@@ -576,7 +592,7 @@ ABOUT PAGE - TABLET STYLES
     width: 32%;
   }
 
-  /*---------- REVIEWS --------*/
+  /*---------- DESKTOP HOMEPAGE - REVIEWS --------*/
 
   .reviews {
     display: flex;
@@ -609,15 +625,34 @@ ABOUT PAGE - TABLET STYLES
     width: 45%;
   }
 
-/*--------------- FOOTER ------------------*/
+/*--------------- DESKTOP HOMEPAGE - FOOTER ------------------*/
 
   .contact-section {
     justify-content: center;
   }
 
-  .contact-content {
-    max-width:;
+  /*============================================================
+  ABOUT PAGE - DESKTOP STYLES
+  =============================================================*/
+
+  .content-wrapper {
+    max-width: 1000px;
+    width: 90%;
   }
+
+  .contact-content div {
+    width: 50%;
+    text-align: left;
+  }
+
+
+
+
+
+  /*===========================================================
+  FAQ PAGE - DESKTOP STYLES
+  ============================================================*/
+
 
 }
 
