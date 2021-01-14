@@ -87,12 +87,78 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*--- GENERAL STYLES ---*/
+
+html {
+  font-size: 16px;
+
+}
+
+body {
+  font-family: "amiri";
+
+}
+
+ul,
+ol {
+
+}
+
+a {
+  color: #90ADAA;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  color: #5A7975;
+}
+
+h2 {
+  font-family: "cormorant infant";
+  font-size: 2em;
+  color: #714856;
+
+}
+
+h3,
+h4 {
+
+}
+
+p {
+  font-size: 1.1em;
+
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address div{
+  font-style: normal;
+
+}
+
+.content-wrapper {
+
+}
+
+
+
+
+/*--- Site-wide content wrapper ---*/
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
 
-  /***** Header, footer base styles *****/
+  /*---------- HEADER/FOOTER - BASE STYLES -------------*/
 
   header,
   footer {
@@ -100,10 +166,9 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color: #60655F;
   }
 
-  /***** Header styles - mobile *****/
+  /*--------- HEADER - MOBILE (HOMEPAGE) -----------*/
 
   header {
     padding: 15px 0;
@@ -142,9 +207,10 @@ textarea {
     list-style: none;
   }
 
+  /*--------- FOOTER - MOBILE (HOMEPAGE) ---------*/
+
   footer {
     flex-direction: column;
-    background-color: #AB9675;
 
   }
 
@@ -178,44 +244,40 @@ textarea {
     margin: 70px 0 0 0;
   }
 
-  /***** Main area styles - mobile *****/
-
-  main {
-
-  }
-
-  main .content-wrapper {
-    width: 90%;
-
-  }
-
-    /***** Hero area - mobile homepage *****/
+    /*----------- HERO AREA - MOBILE (HOMEPAGE) -----------*/
 
     .hero-area {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
-      background-color: #FFE0C9;
+      font-family: "cormorant infant";
+      font-size: 3em;
+      background-image: url("../img/grand-piano.jpg");
+      background-size: cover;
     }
 
-    /***** Email form field styles - homepage *****/
+    .hero-area h1 {
+      color: #90ADAA;
+    }
+
+
+    /*---------- ASIDE (Newsletter form) - MOBILE (HOMEPAGE) ----------*/
 
     aside {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      background-color: #D4CCBA;
 
     }
 
-    /***** Features styles - homepage *****/
+    /*----------- FEATURES - MOBILE (HOMEPAGE) -----------*/
 
     .features {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
-      background-color: #CF8442;
+      background-size: cover;
 
     }
 
@@ -241,7 +303,7 @@ textarea {
       margin: 0;
     }
 
-    /***** Reviews styles *****/
+    /*---------- REVIEWS - MOBILE (HOMEPAGE) ---------*/
 
     .reviews {
       display: flex;
@@ -262,7 +324,7 @@ textarea {
 
 
   /*=====================================================
-  ABOUT PAGE
+  ABOUT PAGE - MOBILE
   ======================================================*/
 
   .mission {
@@ -285,12 +347,12 @@ textarea {
   }
 
   /*============================================================
-  FAQ PAGE
+  FAQ PAGE - MOBILE
   =============================================================*/
+  
   .faq {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
   }
 
@@ -298,7 +360,6 @@ textarea {
     margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
-    align-items: center;  
     flex-flow: row wrap;
 
   }
@@ -309,7 +370,10 @@ textarea {
 
   .faq-content {
     margin-bottom: 50px;
+
   }
+
+/* End Author's custom mobile styles*/
 
 /* ==========================================================================
    Helper classes
@@ -394,20 +458,19 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Author's MEDIA QUERIES Below
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /*-------- TABLET styles here --------*/
+  
+  /*-------- TABLET STYLES --------*/
 
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
   }
 
-/*------------------- Header ---------------------*/
+/*------------------- HEADER - TABLET (HOMEPAGE) ---------------------*/
 
   header {
     justify-content: space-around;
@@ -432,7 +495,7 @@ textarea {
     display: none;
   }
 
-/*----------------------- Aside Section - Homepage----------------------*/
+/*-------------- ASIDE - TABLET (HOMEPAGE) -----------*/
 
   aside .content-wrapper {
     display: flex;
@@ -454,7 +517,7 @@ textarea {
     width: 45%;
   }
 
-  /*----------------- Main Section - Homepage-------------------*/
+  /*------------ FEATURES - TABLET (HOMEPAGE) --------------*/
 
   .features .features-items {
     align-items: flex-start;
@@ -470,7 +533,7 @@ textarea {
   }
 
 
-/* ------------ Reviews - Homepage ----------------*/
+/* ------------ REVIEWS - TABLET (HOMEPAGE) -----------*/
 
   .reviews {
     width: 100%;
@@ -496,7 +559,7 @@ textarea {
     width: 50%;
   }
 
-/*------------- Footer -------------------------*/
+/*------------- FOOTER - TABLET (HOMEPAGE) --------------*/
 
   footer .content-wrapper {
     width: 65%;
@@ -506,7 +569,6 @@ textarea {
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   footer .contact {
@@ -557,7 +619,7 @@ ABOUT PAGE - TABLET STYLES
   }
 
 /*========================================================
-FAQ PAGE - TABLET
+FAQ PAGE - TABLET STYLES
 =========================================================*/
    .faq .content-wrapper {
     justify-content: space-between;
@@ -568,16 +630,17 @@ FAQ PAGE - TABLET
    }
 
    .faq-content {
-    width: 48%;
+    width: 46%;
    }
 
 }
 
 
 @media only screen and (min-width: 1200px) {
+ 
   /*-------- DESKTOP styles here --------*/
 
-  /* DESKTOP HOMEPAGE */
+  /*---------- FEATURES - DESKTOP HOMEPAGE --------------- */
 
   .content-wrapper {
     max-width: 1100px;
@@ -592,7 +655,7 @@ FAQ PAGE - TABLET
     width: 32%;
   }
 
-  /*---------- DESKTOP HOMEPAGE - REVIEWS --------*/
+  /*---------- REVIEWS - DESKTOP HOMEPAGE --------*/
 
   .reviews {
     display: flex;
@@ -625,11 +688,12 @@ FAQ PAGE - TABLET
     width: 45%;
   }
 
-/*--------------- DESKTOP HOMEPAGE - FOOTER ------------------*/
+/*--------------- FOOTER - DESKTOP HOMEPAGE ------------------*/
 
   .contact-section {
     justify-content: center;
   }
+
 
   /*============================================================
   ABOUT PAGE - DESKTOP STYLES
@@ -640,13 +704,15 @@ FAQ PAGE - TABLET
     width: 90%;
   }
 
-  .contact-content div {
-    width: 50%;
-    text-align: left;
+  .contact-content {
+    display: flex;
+    justify-content: space-around;
   }
 
-
-
+  .contact-content div {
+    width: 40%;
+    text-align: left;
+  }
 
 
   /*===========================================================
@@ -654,7 +720,6 @@ FAQ PAGE - TABLET
   ============================================================*/
 
 
-}
 
 /* ==========================================================================
    Print styles.
