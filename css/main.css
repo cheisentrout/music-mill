@@ -117,17 +117,23 @@ li a:hover {
 h2 {
   font-family: "cormorant infant";
   font-size: 2em;
-  color: #714856;
+  color: #384D5A;
+  letter-spacing: 1.2px;
 
 }
 
 h3,
 h4 {
+  color: #384D5A;
+  font-family: "cormorant infant";
+  font-size: 1.5em;
+  letter-spacing: 1.2px;
 
 }
 
 p {
   font-size: 1.1em;
+  line-height: 2em;
 
 }
 
@@ -211,7 +217,13 @@ address div{
 
   footer {
     flex-direction: column;
+    background-color: #C3915A;
 
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    font-family: "cormorant infant";
   }
 
   footer p {
@@ -252,7 +264,8 @@ address div{
       flex-flow: row wrap;
       font-family: "cormorant infant";
       font-size: 3em;
-      background-image: url("../img/grand-piano.jpg");
+      letter-spacing: 1.2px;
+      background-image: url("");
       background-size: cover;
     }
 
@@ -266,8 +279,9 @@ address div{
     aside {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-flow: row wrap;
+      background-color: #9FACB4;
 
     }
 
@@ -309,16 +323,20 @@ address div{
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
+      background-color: #4D6574;
+      color: white;
 
     }
 
     .reviews h2 {
       margin-bottom: 40px;
-
+      color: white;
     }
     .reviews h3 {
       width: 55%;
       margin: 20px 0;
+      color: white;
+      font-size: 1.2em;
 
     }
 
@@ -372,6 +390,35 @@ address div{
     margin-bottom: 50px;
 
   }
+
+ /* EMAIL FORM */ 
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #C3915A;
+  font-family: 'amiri';
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #D4DDDE;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input[type=button]:hover {
+  color: #4D6574;
+}
+
 
 /* End Author's custom mobile styles*/
 
@@ -506,14 +553,12 @@ address div{
   aside .form-description {
    display: flex;
    flex-flow: column nowrap;
-   justify-content: space-around;
    width: 45%;
   }
 
   aside .form {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
     width: 45%;
   }
 
