@@ -90,7 +90,7 @@ textarea {
 /*--- GENERAL STYLES ---*/
 
 html {
-  font-size: 16px;
+  font-size: 17px;
 
 }
 
@@ -134,14 +134,18 @@ h4 {
 p {
   font-size: 1.1em;
   line-height: 2em;
+  letter-spacing: .05em;
 
 }
 
 img {
+  width: 90%;
+
 
 }
 
 figure {
+  width: 100%;
 
 }
 
@@ -161,7 +165,7 @@ address div{
 
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
+  margin: 30px 0 50px 0;
 }
 
   /*---------- HEADER/FOOTER - BASE STYLES -------------*/
@@ -211,6 +215,7 @@ address div{
     justify-content: space-around;
     width: 100%;
     list-style: none;
+    font-family: "cormorant infant";
   }
 
   /*--------- FOOTER - MOBILE (HOMEPAGE) ---------*/
@@ -265,12 +270,13 @@ address div{
       font-family: "cormorant infant";
       font-size: 3em;
       letter-spacing: 1.2px;
-      background-image: url("");
+      background-image: url("../img/snow-barn.jpg");
+      background-size: cover;
       background-size: cover;
     }
 
     .hero-area h1 {
-      color: #90ADAA;
+      color: white;
     }
 
 
@@ -291,6 +297,8 @@ address div{
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
+      background-image: url("../img/cropped-piano.jpg");
+      background-width: 100%;
       background-size: cover;
 
     }
@@ -317,6 +325,27 @@ address div{
       margin: 0;
     }
 
+    /* Featured Image Styles */
+
+    .featured-image {
+      display: flex;
+      justify-content: center;
+      background-color: #C3915A;
+      width: 100%;
+      margin: 0;
+    }
+
+    .featured-image figure {
+      width: 100%;
+    }
+
+    .featured-image img {
+      width: 100%;
+      opacity: 70%;
+    }
+
+
+
     /*---------- REVIEWS - MOBILE (HOMEPAGE) ---------*/
 
     .reviews {
@@ -325,7 +354,6 @@ address div{
       flex-flow: row wrap;
       background-color: #4D6574;
       color: white;
-
     }
 
     .reviews h2 {
@@ -350,7 +378,17 @@ address div{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-image: url("../img/band.jpg");
+    background-size: cover;
+    color: white;
+    opacity: 75%;
 
+  }
+
+  .mission h2 {
+    color: white;
+    text-transform: bold;
+    font-size: 3em;
   }
 
   .contact-section {
@@ -358,10 +396,12 @@ address div{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #9FACB4;
 }
 
   .contact-content  {
     margin: 0;
+
   }
 
   /*============================================================
@@ -372,6 +412,7 @@ address div{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background-color: #9FACB4;
   }
 
   .faq .content-wrapper {
@@ -513,7 +554,7 @@ input[type=button]:hover {
   /*-------- TABLET STYLES --------*/
 
   .content-wrapper {
-    max-width: 640px;
+    max-width: 680px;
     margin: 100px 0;
   }
 
@@ -595,13 +636,25 @@ input[type=button]:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  .reviews-half-width img {
+    width: 45%;
   }
 
   .reviews-text {
     display: flex;
     flex-direction: column;
     width: 50%;
+  }
+
+  .reviews-text p {
+    line-height: 1.5em;
+  }
+
+  .reviews h3 {
+    margin: 0;
   }
 
 /*------------- FOOTER - TABLET (HOMEPAGE) --------------*/
@@ -731,6 +784,10 @@ FAQ PAGE - TABLET STYLES
     display: flex;
     flex-flow: row wrap;
     width: 45%;
+  }
+
+  .reviews-text p {
+    line-height: 2em;
   }
 
 /*--------------- FOOTER - DESKTOP HOMEPAGE ------------------*/
