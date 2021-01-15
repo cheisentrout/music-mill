@@ -139,13 +139,13 @@ p {
 }
 
 img {
-  width: 90%;
+  width: 100%;
 
 
 }
 
 figure {
-  width: 100%;
+  margin: 0;
 
 }
 
@@ -153,12 +153,6 @@ address div{
   font-style: normal;
 
 }
-
-.content-wrapper {
-
-}
-
-
 
 
 /*--- Site-wide content wrapper ---*/
@@ -178,10 +172,16 @@ address div{
     flex-flow: row wrap;
   }
 
+  header .content-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0px 50px;
+  }
+
   /*--------- HEADER - MOBILE (HOMEPAGE) -----------*/
 
   header {
-    padding: 15px 0;
+    padding: 15px d0;
 
   }
 
@@ -192,6 +192,18 @@ address div{
     flex-flow: row wrap;
     margin: 0;
 
+  }
+
+  header figure a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+
+  }
+
+  header img {
+    max-width: 50%;
   }
 
   .header-divider {
@@ -212,10 +224,12 @@ address div{
 
   header nav ul {
     display: flex;
+    font-size: 1.2em;
     justify-content: space-around;
     width: 100%;
     list-style: none;
     font-family: "cormorant infant";
+    padding-left: none;
   }
 
   /*--------- FOOTER - MOBILE (HOMEPAGE) ---------*/
@@ -272,7 +286,7 @@ address div{
       letter-spacing: 1.2px;
       background-image: url("../img/snow-barn.jpg");
       background-size: cover;
-      background-size: cover;
+      background-position: center;
     }
 
     .hero-area h1 {
@@ -297,9 +311,10 @@ address div{
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
-      background-image: url("../img/cropped-piano.jpg");
+      background-image: url("../img/piano-opaque.jpg");
       background-width: 100%;
       background-size: cover;
+      background-position: center;
 
     }
 
@@ -569,6 +584,10 @@ input[type=button]:hover {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure a {
+    justify-content: flex-start;
   }
 
   header nav {
