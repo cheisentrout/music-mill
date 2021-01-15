@@ -115,7 +115,7 @@ li a:hover {
 }
 
 h2 {
-  font-family: "cormorant infant";
+  font-family: "cormorant infant light";
   font-size: 2em;
   color: #384D5A;
   letter-spacing: 1.2px;
@@ -283,7 +283,7 @@ address div{
       flex-flow: row wrap;
       font-family: "cormorant infant";
       font-size: 3em;
-      letter-spacing: 1.2px;
+      letter-spacing: .1em;
       background-image: url("../img/snow-barn.jpg");
       background-size: cover;
       background-position: center;
@@ -291,6 +291,11 @@ address div{
 
     .hero-area h1 {
       color: white;
+
+    }
+
+    .hero-area h1 span {
+      font-family: "cormorant infant light";
     }
 
 
@@ -404,6 +409,22 @@ address div{
     color: white;
     text-transform: bold;
     font-size: 3em;
+  }
+
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 65%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .contact-section {
@@ -756,6 +777,21 @@ FAQ PAGE - TABLET STYLES
 @media only screen and (min-width: 1200px) {
  
   /*-------- DESKTOP styles here --------*/
+
+  /*-- HERO AREA - DESKTOP HOMEPAGE --*/
+
+  .hero-area .content-wrapper {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    }
+
+  .hero-area h1 {
+    color: white;
+    margin: 0 0 50px 0;
+  }
 
   /*---------- FEATURES - DESKTOP HOMEPAGE --------------- */
 
