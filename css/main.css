@@ -181,7 +181,8 @@ address div{
   /*--------- HEADER - MOBILE (HOMEPAGE) -----------*/
 
   header {
-    padding: 15px d0;
+    padding: 15px 0;
+    border: 2px solid #9FACB4;
 
   }
 
@@ -749,11 +750,25 @@ ABOUT PAGE - TABLET STYLES
     width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 52%;
+  }
+
+  .contact-section .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
   .contact-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 90%;
+  }
+
+  .contact-content div {
+    width: 48%;
   }
 
 /*========================================================
@@ -855,6 +870,10 @@ FAQ PAGE - TABLET STYLES
   /*============================================================
   ABOUT PAGE - DESKTOP STYLES
   =============================================================*/
+
+  .map figure {
+    padding-bottom: 40%;
+  }
 
   .content-wrapper {
     max-width: 1000px;
