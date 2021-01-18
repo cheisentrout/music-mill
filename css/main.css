@@ -244,6 +244,10 @@ address div{
     margin-bottom: 50px;
   }
 
+  footer address p {
+    color: black;
+  }
+
   footer .social-icons {
     display: flex;
     justify-content: space-around;
