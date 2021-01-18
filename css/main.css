@@ -118,7 +118,7 @@ h4 {
   color: #384D5A;
   font-family: "cormorant infant";
   font-size: 1.5em;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.1px;
 }
 
 p {
@@ -215,7 +215,8 @@ address div{
     width: 100%;
     list-style: none;
     font-family: "cormorant infant";
-    padding-left: none;
+    padding-left: 0;
+    padding-right: 10px;
   }
 
   /*--------- FOOTER - MOBILE (HOMEPAGE) ---------*/
@@ -238,6 +239,7 @@ address div{
   footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
+    text-align: center;
   }
 
   footer .contact {
@@ -268,6 +270,8 @@ address div{
   footer .copyright {
     margin: 70px 0 0 0;
     font-size: .8em;
+    text-align: center;
+
   }
 
     /*----------- HERO AREA - MOBILE (HOMEPAGE) -----------*/
