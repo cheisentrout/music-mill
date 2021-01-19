@@ -204,7 +204,8 @@ address div{
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    width: 60%;
+    width: 80%;
+    max-width: 200px;
 
   }
 
@@ -216,7 +217,7 @@ address div{
     list-style: none;
     font-family: "cormorant infant";
     padding-left: 0;
-    padding-right: 10px;
+    margin-bottom: 0;
   }
 
   /*--------- FOOTER - MOBILE (HOMEPAGE) ---------*/
@@ -388,11 +389,11 @@ address div{
     }
 
     .reviews h2 {
+      margin-top: 0;
       margin-bottom: 40px;
       color: white;
     }
     .reviews h3 {
-      width: 55%;
       margin: 20px 0;
       color: white;
       font-size: 1.2em;
@@ -419,7 +420,8 @@ address div{
   .mission h2 {
     color: white;
     text-transform: bold;
-    font-size: 3em;
+    font-size: 2.3em;
+    margin-top: 0;
   }
 
   .map figure {
@@ -445,6 +447,10 @@ address div{
     flex-flow: row wrap;
     background-color: #9FACB4;
 }
+
+  .contact-section h2 {
+    margin-top: 0;
+  }
 
   .contact-content  {
     margin: 0;
@@ -473,11 +479,12 @@ address div{
   }
 
   .faq h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   .faq-content {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
   }
 
@@ -708,6 +715,7 @@ input[type=button]:hover {
 
   .reviews h3 {
     margin: 0;
+    width: 55%;
   }
 
 /*------------- FOOTER - TABLET (HOMEPAGE) --------------*/
